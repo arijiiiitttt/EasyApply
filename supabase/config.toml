@@ -1,0 +1,8 @@
+# Used by the Supabase CLI when deploying functions.
+# Telegram and WhatsApp do not send a Supabase login token, so each webhook is
+# protected by its own secret check inside the function instead.
+[functions.telegram-webhook]
+verify_jwt = false
+
+[functions.whatsapp-webhook]
+verify_jwt = false

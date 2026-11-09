@@ -1,0 +1,36 @@
+{
+  "name": "easyapply",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Easy Apply: keyword job alerts for companies hiring in India",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/logic.ts",
+    "seed": "tsx scripts/seed.ts",
+    "detect": "tsx scripts/detect-ats.ts",
+    "fetch": "tsx scripts/fetch-jobs.ts",
+    "telegram:webhook": "tsx scripts/set-telegram-webhook.ts"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6"
+  }
+}
